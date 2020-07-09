@@ -1,0 +1,266 @@
+@charset “UTF-8”;
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap');
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+	font-family: 'Krub', sans-serif;
+	background-image: -webkit-linear-gradient(to top, #383836 0%, black 100%);
+    background-image: -moz-linear-gradient(to top, #383836 0%, black 100%);
+    background-image: -o-linear-gradient(to top, #383836 0%, black 100%);
+    background-image: linear-gradient(to top, #383836 0%, black 100%);
+}
+
+
+/* styles for the header   */
+header{
+    background-color: cadetblue;
+    text-align: center;
+}
+header img{
+    max-width: 300px;
+}
+/* styles for the fixed nav   */
+#fixed{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+/* styles for the nav   */
+#nav_menu ul {
+	list-style: none;
+	display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #4d4b47;
+	padding: 0;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: 10px;
+	background-color: #4d4b47;
+	color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 3px 3px 9px black;
+    font-size: 110%;
+}
+#nav_menu ul li a.current_page {
+	color: cadetblue;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: dimgrey;
+}
+
+/* styles for the main */
+main h1{
+    font-size: 200%;
+    text-align: center;
+	color: cadetblue;
+	margin-top: 200px;
+}
+
+main h2{
+    text-align: center;
+    padding-top: 1.5%;
+	font-size: 150%;
+	color: cadetblue
+    
+}
+main p{
+    font-size: 120%;
+	color: whitesmoke;
+	font-weight: 200;
+}
+#details{
+	padding: 0 0 4% 0;
+	font-style: italic;
+}
+#top-portfolio{
+    display: flex;
+    justify-content: center
+}
+#top-portfolio div{
+    width: 50%;
+    padding: 3%;
+}
+#top-portfolio img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+#main-content div{
+    width: 30%;
+    padding: 3%;
+}
+#main-content img{
+    object-fit: cover;
+    width: 100%
+    
+}
+
+/* styles for the footer  */
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    text-shadow: 3px 3px 9px black;
+    padding-bottom: .4em
+}
+footer img{
+    max-width: 200px
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px
+}
+footer a:hover {
+	color: black;
+}
+
+footer a:active {
+	color: navy
+}
+    
+#mobile_menu {
+	display: none;
+}
+
+
+/* tablet portrait */
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #4d4b47 !important;
+	}
+	#mobile_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: dimgrey;
+	}
+	
+	#mobile_menu a{
+		background-color: #4d4b47;
+	}
+	#mobile_menu a:hover {
+		color: white;
+	}
+
+	main h1{
+		font-size: 175%
+	}
+	main h2{
+		font-size: 125%
+		
+	}
+	main p{
+		font-size: 100%;
+		padding: 0 3%
+		
+	}
+	
+	header img{
+		max-width: 250px
+	}
+	footer img{
+		max-width: 150px
+	}
+	footer a{
+		font-size: 80%
+		
+	}
+#main-content div{
+    width: 45%;
+    padding: 3%;
+}
+
+#top-portfolio{
+    display: flex;
+    flex-flow: wrap
+}
+#top-portfolio div{
+    width: 90%;
+    padding: 0 3%;
+}
+#details{
+	padding: 2% 0
+}
+
+}
+
+/* mobile portrait  */
+@media only screen and (max-width: 479px) {
+	main h1{
+		font-size: 150%;
+		margin-top: 175px;
+	}
+	main p{
+		font-size: 80%;
+		padding-bottom: .5em
+		
+	}
+	main h2{
+		font-size: 100%
+	}
+	header img{
+		max-width: 200px
+	}
+	footer img{
+		max-width: 125px;
+	}
+
+	footer a{
+		font-size: 60%
+	}
+#top-portfolio{
+    display: flex;
+    flex-flow: wrap
+}
+#top-portfolio div{
+    width: 90%;
+    padding: 0 3%;
+}
+
+#main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-content div{
+    width: 90%;
+    padding: 3%;
+}
+
+
+}

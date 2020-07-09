@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta content="Margaux Scott's graphic design portfolio." name="description">
+    <meta content="Graphic Design, art, portfolio, doctor who, skating, illustrations, margaux scott, digital art, tech deck, spiderman, ric" name="keywords">
+    <meta content="Margaux Scott" name="author">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+    </script>
+  </head>
+  <body id="top">
+    <div id="fixed">
+      <header>
+        <img src="img/home-page/margaux-scott-white-logo.png" alt="logo">   
+      </header>
+      <!-- ====== nav ======= -->
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html" title="Homepage">Home</a></li>
+          <li><a href="aboutme.html" title="About Me">About Me</a></li>
+          <li>
+            <a href="portfolio.html" title="Portfolio" class="current_page">Portfolio</a>
+            <ul>
+              <li><a href="dwbook.html" title="Doctor Who Book">Doctor Who Book</a></li>
+              <li><a href="adoption.html" title="Adoption Inequality">Adoption Inequality</a></li>
+              <li><a href="techdeck.html" title="Tech Deck Ramp">Tech Deck Ramp</a></li>
+              <li><a href="misc.html" title="Miscellaneous">Miscellaneous</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ====== end nav ======= -->
+    <!-- ====== main ======= -->
+    <main>
+      <h1>Portfolio</h1>
+      <div id="other-content">
+        <div>
+          <a href="dwbook.html" title="Doctor Who Bookbinding Project"> <img src="img/doctor-who-book/dw-main-book-cover.jpg" alt="Doctor Who"> </a>
+          <h2>Doctor Who Bookbinding Project</h2>
+        </div>
+        <div>
+          <a href="adoption.html" title="Adoption Inequality Project"> <img src="img/adoption-inequality/adoption-inequality-logo.png" alt="Adoption"> </a>
+          <h2>Adoption Inequality Project</h2>
+        </div>
+        <div>
+          <a href="techdeck.html" title="Tech Deck Package Design"> <img src="img/tech-deck-ramp/ramp-front-slant.jpg" alt="Tech Deck"> </a>
+          <h2>Tech Deck Package Design</h2>
+        </div>
+        <div>
+          <a href="misc.html" title= "Miscellaneous"> <img src="img/misc/weed-poster-portfolio.png" alt="Misc"> </a>
+          <h2>Miscellaneous</h2>
+        </div>
+      </div>
+    </main>
+    <!-- ====== main end ======= -->
+    <!-- ====== footer ======= -->
+    <footer>
+      <img src="img/home-page/margaux-scott-white-logo.png" alt="logo">
+      <br>
+      <a href="mailto:prosk8girl@gmail.com" title="Email">Email</a>
+      <a href ="#top" title="Top">Back To Top</a>
+      <a href="tel:4016998023" title="Phone"> Phone</a>
+    </footer>
+    <!-- ====== footer end ======= -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154849565-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154849565-2');
+</script>
+
+	
+	
+	
+	</body>
+</html>
