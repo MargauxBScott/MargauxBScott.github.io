@@ -92,8 +92,7 @@ main h2{
 }
 #quote {
     font-size: 150%;
-    display: flex;
-    justify-content: center;
+    display: block;
 	color: whitesmoke;
 	font-style: italic;
 	font-weight: 200;
@@ -264,14 +263,6 @@ main a{
 	color: cadetblue
 }
 
-
-
-
-
-
-
-
-
 /* styles for the footer  */
 footer{
     background-color: cadetblue;
@@ -281,6 +272,7 @@ footer{
 }
 footer img{
     max-width: 200px;
+	padding-top: 5px
 }
 footer a{
     text-decoration: none;
@@ -318,6 +310,7 @@ footer a:active {
 	}
 	#mobile_menu a{
 		background-color: #4d4b47;
+		font-size: 18px
 	}
 
 	main h1{
@@ -332,7 +325,7 @@ footer a:active {
 		padding: 0 3%;
 		}
 	#quote{
-		font-size: 100%
+		font-size: 120%
 		
 	}
 	header img{
@@ -342,7 +335,7 @@ footer a:active {
 		max-width: 150px
 	}
 	footer a{
-		font-size: 80%
+		font-size: 90%
 		
 	}
 
@@ -391,10 +384,10 @@ footer a:active {
 	}
 	#quote{
 		font-size: 100%;
-		padding: 
+		margin-top: 175px
 	}
 	main p{
-		font-size: 80%;
+		font-size: 90%;
 		
 	}
 	main h2{
@@ -404,11 +397,11 @@ footer a:active {
 		max-width: 200px
 	}
 	footer img{
-		max-width: 125px;
+		max-width: 145px;
 	}
 
 	footer a{
-		font-size: 60%
+		font-size: 85%
 	}
 	#aboutme {
     display: flex;
