@@ -1,266 +1,109 @@
-@charset “UTF-8”;
-@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap');
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tech Deck</title>
+    <meta content="Margaux Scott's graphic design portfolio." name="description">
+    <meta content="Graphic Design, art, portfolio, doctor who, skating, illustrations, margaux scott, digital art, tech deck, spiderman, ric" name="keywords">
+    <meta content="Margaux Scott" name="author">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+    </script>
+  </head>
+  <body id="top">
+    <div id="fixed">
+      <header>
+        <img src="img/home-page/margaux-scott-white-logo.png" alt="logo">   
+      </header>
+      <!-- ====== nav ======= -->
+      <nav id="mobile_menu"></nav>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html" title="Homepage">Home</a></li>
+          <li><a href="aboutme.html" title="About Me">About Me</a></li>
+          <li>
+            <a href="portfolio.html" title="Portfolio" class="current_page">Portfolio</a>
+            <ul>
+              <li><a href="dwbook.html" title="Doctor Who Book">Doctor Who Book</a></li>
+              <li><a href="adoption.html" title="Adoption Inequality">Adoption Inequality</a></li>
+              <li><a href="techdeck.html" title="Tech Deck Ramp" class="current_page">Tech Deck Ramp</a></li>
+              <li><a href="misc.html" title="Miscellaneous">Miscellaneous</a></li>
+            </ul>
+          <li><a href="assets/mbs-resume.pdf" title="Resume">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ====== end nav ======= -->
+    <!-- ====== main ======= -->
+    <main>
+      <h1>Tech Deck Package Design</h1>
+      <div id="top-portfolio">
+        <div><img src="img/tech-deck-ramp/ramp-all-supplies-out.jpg" alt="all supplies"></div>
+        <div>
+          <h2 id="details">The Details</h2>
+			<p>For this half semester long project, we were asked to create a package completely from scratch.  We also had to create a logo for a company.  The idea for the ramp came to me at work.  I used to like finger boards as a kid, and I thought about how great it would be to have a ramp that would also be used as a carrying case. From that inspiration, I started designing prototypes to get the right curve of the ramp.  I was going to use poster board originally, then I decided to use wood.  I used balsa wood because it is thin and easy to cut with an X-ACTO blade.  It is also a very bendable wood that would work well for the curve.  I designed the hinge by placing a piece of cell phone cleaning cloth between two pieces of wood on one side.  Then, on the other side, the piece is connected to the door.  I also used regular Elmer’s Glue to attach everything.   For the logo on the wood I used iron on paper to get it to stay.  I also made two shelves to hold some boards, cones and some tools for traveling.  The last thing I designed was the paper that shows the contents of the package that was held in by the door but not fully connected.</p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div>
+          <img src="img/tech-deck-ramp/ramp-front.jpg" alt="Front">
+          <h2>Front View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/ramp-front-slant.jpg" alt="Front Slant">
+          <h2>Front Slant View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/ramp-sideways.jpg" alt="Side View">
+          <h2>Side View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/ramp-back-slant.jpg" alt="Back Slant">
+          <h2>Back Slant View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/ramp-back-open.jpg" alt="Back Open">
+          <h2>Back Open View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/ramp-board-ontop-slant.jpg" alt="Activity">
+          <h2>Activity View</h2>
+        </div>
+        <div>
+          <img src="img/tech-deck-ramp/contains-darker.png" alt="Contents">
+          <h2>Contents of the Ramp</h2>
+        </div>
+      </div>
+    </main>
+    <!-- ====== end main ======= -->
+    <!-- ====== footer ======= -->
+    <footer>
+      <img src="img/home-page/margaux-scott-white-logo.png" alt="logo">
+      <br>
+      <a href="mailto:prosk8girl@gmail.com" title="Email">Email</a>
+      <a href ="#top" title="Top">Back To Top</a>
+      <a href="tel:4016998023" title="Phone"> Phone</a>
+    </footer>
+    <!-- ====== footer end ======= -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154849565-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-154849565-2');
+</script>
 
-* {
-	margin: 0;
-	box-sizing: border-box;
-}
-body{
-	background-color: black;
-	font-family: 'Krub', sans-serif;
-	background-image: -webkit-linear-gradient(to top, #383836 0%, black 100%);
-    background-image: -moz-linear-gradient(to top, #383836 0%, black 100%);
-    background-image: -o-linear-gradient(to top, #383836 0%, black 100%);
-    background-image: linear-gradient(to top, #383836 0%, black 100%);
-}
-
-
-/* styles for the header   */
-header{
-    background-color: cadetblue;
-    text-align: center;
-}
-header img{
-    max-width: 300px;
-}
-/* styles for the fixed nav   */
-#fixed{
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
-
-/* styles for the nav   */
-#nav_menu ul {
-	list-style: none;
-	display: flex;
-    justify-content: center;
-    position: relative;
-    background-color: #4d4b47;
-	padding: 0;
-}
-#nav_menu ul li {
-	float: left;
-}
-#nav_menu ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-}
-#nav_menu ul ul li {
-	float: none;
-}
-#nav_menu ul li:hover > ul {
-	display: block;
-}
-#nav_menu > ul::after {
-	content: "";
-	clear: both;
-	display: block;
-}
-#nav_menu ul li a {
-	text-align: center;
-	display: block;
-	padding: 10px;
-	background-color: #4d4b47;
-	color: whitesmoke;
-    text-decoration: none;
-    text-shadow: 3px 3px 9px black;
-    font-size: 110%;
-}
-#nav_menu ul li a.current_page {
-	color: cadetblue;
-}
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
-	background-color: dimgrey;
-}
-
-/* styles for the main */
-main h1{
-    font-size: 200%;
-    text-align: center;
-	color: cadetblue;
-	margin-top: 200px;
-}
-
-main h2{
-    text-align: center;
-    padding-top: 1.5%;
-	font-size: 150%;
-	color: cadetblue
-    
-}
-main p{
-    font-size: 120%;
-	color: whitesmoke;
-	font-weight: 200;
-}
-#details{
-	padding: 0 0 4% 0;
-	font-style: italic;
-}
-#top-portfolio{
-    display: flex;
-    justify-content: center
-}
-#top-portfolio div{
-    width: 50%;
-    padding: 3%;
-}
-#top-portfolio img{
-    width: 100%;
-    object-fit: cover;
-}
-
-#main-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
-}
-#main-content div{
-    width: 30%;
-    padding: 3%;
-}
-#main-content img{
-    object-fit: cover;
-    width: 100%
-    
-}
-
-/* styles for the footer  */
-footer{
-    background-color: cadetblue;
-    text-align: center;
-    text-shadow: 3px 3px 9px black;
-    padding-bottom: .4em
-}
-footer img{
-    max-width: 200px
-}
-footer a{
-    text-decoration: none;
-    color: white;
-    padding: 0 10px
-}
-footer a:hover {
-	color: black;
-}
-
-footer a:active {
-	color: navy
-}
-    
-#mobile_menu {
-	display: none;
-}
-
-
-/* tablet portrait */
-@media only screen and (max-width: 767px) {
-    #nav_menu {
-		display: none;
-	}
-	#mobile_menu {
-		display: block;
-	}
-	.slicknav_menu {
-		background-color: #4d4b47 !important;
-	}
-	#mobile_menu ul li a:hover, #nav_menu ul li a:focus {
-	background-color: dimgrey;
-	}
 	
-	#mobile_menu a{
-		background-color: #4d4b47;
-	}
-	#mobile_menu a:hover {
-		color: white;
-	}
-
-	main h1{
-		font-size: 175%
-	}
-	main h2{
-		font-size: 125%
-		
-	}
-	main p{
-		font-size: 100%;
-		padding: 0 3%
-		
-	}
-	
-	header img{
-		max-width: 250px
-	}
-	footer img{
-		max-width: 150px
-	}
-	footer a{
-		font-size: 80%
-		
-	}
-#main-content div{
-    width: 45%;
-    padding: 3%;
-}
-
-#top-portfolio{
-    display: flex;
-    flex-flow: wrap
-}
-#top-portfolio div{
-    width: 90%;
-    padding: 0 3%;
-}
-#details{
-	padding: 2% 0
-}
-
-}
-
-/* mobile portrait  */
-@media only screen and (max-width: 479px) {
-	main h1{
-		font-size: 150%;
-		margin-top: 175px;
-	}
-	main p{
-		font-size: 80%;
-		padding-bottom: .5em
-		
-	}
-	main h2{
-		font-size: 100%
-	}
-	header img{
-		max-width: 200px
-	}
-	footer img{
-		max-width: 125px;
-	}
-
-	footer a{
-		font-size: 60%
-	}
-#top-portfolio{
-    display: flex;
-    flex-flow: wrap
-}
-#top-portfolio div{
-    width: 90%;
-    padding: 0 3%;
-}
-
-#main-content{
-    display: flex;
-    flex-wrap: wrap;
-}
-#main-content div{
-    width: 90%;
-    padding: 3%;
-}
-
-
-}
+	</body>
+</html>
